@@ -1,5 +1,9 @@
 module.exports = {
-  presets: ['@babel/react', '@babel/flow', ['@babel/env', { loose: true }]],
+  presets: [
+    ['@babel/preset-typescript', { isTSX: true, allExtensions: true }],
+    '@babel/react',
+    ['@babel/env', { loose: true }]
+  ],
   plugins: [
     '@babel/transform-object-assign',
     ['@babel/proposal-class-properties', { loose: true }],

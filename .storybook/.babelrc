@@ -1,7 +1,6 @@
 {
   "presets": [
     "@babel/react",
-    "@babel/flow",
     ["@babel/env", { "modules": false, "loose": true }],
     "@emotion/babel-preset-css-prop"
   ],

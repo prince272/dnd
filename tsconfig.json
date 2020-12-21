@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react",
@@ -16,14 +17,11 @@
     "types": [],
     "lib": [
       "dom",
-      "es6"
+      "esnext"
     ]
   },
+  "include": ["src/**/*", "test/**/*", "stories/**/*"],
   "exclude": [
     "node_modules"
-  ],
-  "files": [
-    "src/index.d.ts",
-    "test/test-typescript-types.tsx"
   ]
 }

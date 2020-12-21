@@ -1,8 +1,6 @@
-// @flow
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '@atlaskit/theme';
-import { grid } from '../../stories/src/constants';
 
 // $ExpectError - not sure why
 const GlobalStyles = styled.div`
@@ -10,7 +8,7 @@ const GlobalStyles = styled.div`
   color: ${colors.N900};
 `;
 
-const GlobalStylesDecorator = (storyFn: Function) => (
+const GlobalStylesDecorator = (storyFn) => (
   <GlobalStyles>{storyFn()}</GlobalStyles>
 );
 
